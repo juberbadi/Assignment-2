@@ -1,0 +1,18 @@
+<!-- Fetch a file and display WeatherData -->
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo">Fetch a file to change this text.</p>
+
+    <script>
+      getText("WeatherData.json");
+
+      async function getText(file) {
+        let myObject = await fetch(file);
+        let data = await myObject.text();
+        document.getElementById("demo").innerHTML = data;
+      }
+    </script>
+  </body>
+</html>

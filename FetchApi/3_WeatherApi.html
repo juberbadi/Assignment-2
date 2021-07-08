@@ -1,0 +1,14 @@
+<!-- -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="demo">Fetch a file to change this text.</p>
+    <script>
+      let file = "WeatherData.json";
+
+      fetch(file)
+        .then((myObject) => myObject.text())
+        .then((data) => (document.getElementById("demo").innerHTML = data));
+    </script>
+  </body>
+</html>
