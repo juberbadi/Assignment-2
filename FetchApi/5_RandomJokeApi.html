@@ -1,10 +1,10 @@
-<!-- fetches a file and displays data-->
+<!-- Random Joke Api-->
 <!DOCTYPE html>
 <html>
   <body>
     <p id="demo">Fetch a file to change this text.</p>
     <script>
-      let file = "WeatherData.json";
+      let file = "https://api.chucknorris.io/jokes/random";
 
       fetch(file)
         .then((myObject) => myObject.text())
